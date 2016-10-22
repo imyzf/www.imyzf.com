@@ -3,23 +3,23 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Kaijun's Blog
-subtitle: To Be A Lean Developer!
-author: Kaijun Chen
+title: I'm YZF
+subtitle: Coding forever!
+author: imyzf
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://kaijun.rocks/hexo-theme-huxblog
-root: /hexo-theme-huxblog/
+url: http://www.imyzf.com/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 #Custom Setting Start
 
 # Site settings
-SEOTitle: Kaijun的博客 | Kaijun's Blog
+SEOTitle: I'm YZF - Coding forever
 header-img: img/home-bg.jpg
 email: Kaijun.cn@gmail.com
 description: ""
@@ -28,12 +28,12 @@ keyword: ""
 
 # SNS settings
 # RSS: false
-weibo_username:     Demonbane
-zhihu_username:     Demonbane
-github_username:    Kaijun
-twitter_username:   Demonbane_x
-facebook_username:  demonbane.cn
-linkedin_username:  kaijun-chen-42089354
+weibo_username: imyzf
+zhihu_username:
+github_username: imyzf
+twitter_username:
+facebook_username:
+linkedin_username:
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
@@ -59,7 +59,7 @@ ga_domain: huangxuan.me
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "我要成为魔法师!"
-sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 # Featured Tags
@@ -68,28 +68,7 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 
 # Friends
-friends: [
-    {
-        title: "Kaijun's Blog",
-        href: "http://blog.kaijun.rocks"
-    },{
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
-    },{
-        title: "Foo",
-        href: "#"
-    },{
-        title: "Bar",
-        href: "#"
-    },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
-        href: "#"
-    }
-]
-
+friends:
 
 #Custom Setting End
 
