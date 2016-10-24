@@ -5,7 +5,7 @@ tags:
   - 微信
 id: 55
 categories:
-  - Javascript
+  - frontend
 date: 2015-03-22 23:12:39
 ---
 
@@ -13,7 +13,7 @@ WebSocket是一个非常好的东西，用于开发实时应用非常好。它�
 
 测试方法很简单，我把socket.io官网的聊天室Demo发到朋友圈，看看大家能否正常使用。
 
-[![微信websocket测试](http://www.imyzf.com/wp-content/uploads/2015/03/Screenshot_2015-03-19-22-48-07.jpg)](http://www.imyzf.com/wp-content/uploads/2015/03/Screenshot_2015-03-19-22-48-07.jpg)
+[![微信websocket测试](http://cdn.imyzf.com/img/blog/2015/compatibility-of-websocket-with-wechat-broswer/1.jpg)](http://cdn.imyzf.com/img/blog/2015/compatibility-of-websocket-with-wechat-broswer/1.jpg)
 
 &nbsp;
 
@@ -26,6 +26,6 @@ WebSocket是一个非常好的东西，用于开发实时应用非常好。它�
 
 最后附上一张caniuse.com公布的WebSocket浏览器端兼容性对比（点击查看大图）。虽然Android4.3及以下系统浏览器都不支持WebSocket，但好在微信内置QQ浏览器内核，解决了这一问题。
 
-[![Websocket浏览器兼容性对比](http://www.imyzf.com/wp-content/uploads/2015/03/选区_002-1024x417.png)](http://www.imyzf.com/wp-content/uploads/2015/03/选区_002.png)
+[![Websocket浏览器兼容性对比](http://cdn.imyzf.com/img/blog/2015/compatibility-of-websocket-with-wechat-broswer/2.png)](http://cdn.imyzf.com/img/blog/2015/compatibility-of-websocket-with-wechat-broswer/2.png)
 
 &nbsp;

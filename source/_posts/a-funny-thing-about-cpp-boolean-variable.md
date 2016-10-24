@@ -4,7 +4,7 @@ tags:
   - c++
 id: 9
 categories:
-  - 其他
+  - others
 date: 2014-06-21 16:03:00
 ---
 
@@ -12,13 +12,13 @@ date: 2014-06-21 16:03:00
 
 会出现这个问题的起源是这样的，一个同学问我：
 
-[cpp]
+```cpp
 int main()
 {
     int i = -1;
     cout &lt;&lt; !i &lt;&lt; endl;
 }
-[/cpp]
+```
 
 为什么输出是0！！！
 
@@ -28,7 +28,7 @@ int main()
 
 但是为什么会出现0而不是false呢？在cout中，有std::boolalpha和std::noboolalpha这两个选项，分别表示以字母（true, false输出和以数字（1, 0）输出。
 
-![](http://www.imyzf.com/wp-content/uploads/2015/03/212357508175149.jpg)
+[![](http://cdn.imyzf.com/img/blog/2014/a-funny-thing-about-cpp-boolean-variable/1.jpg)](http://cdn.imyzf.com/img/blog/2014/a-funny-thing-about-cpp-boolean-variable/1.jpg)
 
 用codeblocks测试后发现，**默认的是std::noboolalpha**，这一点是不是又有很多人不知道呢？
 

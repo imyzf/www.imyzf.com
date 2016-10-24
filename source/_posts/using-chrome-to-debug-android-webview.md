@@ -2,10 +2,9 @@
 title: 使用chrome调试安卓WebView里的网页
 tags:
   - chrome
-  - 安卓
 id: 70
 categories:
-  - 其他
+  - frontend
 date: 2015-04-01 23:08:47
 ---
 
@@ -13,16 +12,14 @@ date: 2015-04-01 23:08:47
 
 该功能支持安卓4.4及以上，进入手机设置 - 开发者选项，打开USB调试，连接电脑。然后进入chrome://inspect/#devices，就会看到下图的内容（此时我已经在手机上打开自带的浏览器）。
 
-[![chrome审查元素](http://www.imyzf.com/wp-content/uploads/2015/04/2015-04-01-213624-的屏幕截图3.png)](http://www.imyzf.com/wp-content/uploads/2015/04/2015-04-01-213624-的屏幕截图3.png)
+[![chrome审查元素](http://cdn.imyzf.com/img/blog/2015/using-chrome-to-debug-android-webview/1.png)](http://cdn.imyzf.com/img/blog/2015/using-chrome-to-debug-android-webview/1.png)
 点击inspect，就可以进入审查元素界面。
 
-[![审查元素](http://www.imyzf.com/wp-content/uploads/2015/04/2015-04-01-230631-的屏幕截图-1024x523.png)](http://www.imyzf.com/wp-content/uploads/2015/04/2015-04-01-230631-的屏幕截图.png)
+[![审查元素](http://cdn.imyzf.com/img/blog/2015/using-chrome-to-debug-android-webview/2.png)](http://cdn.imyzf.com/img/blog/2015/using-chrome-to-debug-android-webview/2.png)
 
 更神奇的是，不仅仅是自带浏览器，其他应用里的WebView也可以，例如这是某个应用里的游戏，用的也是网页：
 
-[![应用内网页审查元素](http://www.imyzf.com/wp-content/uploads/2015/04/Screenshot_2015-04-01-22-55-32.png)](http://www.imyzf.com/wp-content/uploads/2015/04/Screenshot_2015-04-01-22-55-32.png)
-
-&nbsp;
+[![应用内网页审查元素](http://cdn.imyzf.com/img/blog/2015/using-chrome-to-debug-android-webview/3.png)](http://cdn.imyzf.com/img/blog/2015/using-chrome-to-debug-android-webview/3.png)
 
 然后你就可以研究研究网页，想干什么就干什么了。。
 

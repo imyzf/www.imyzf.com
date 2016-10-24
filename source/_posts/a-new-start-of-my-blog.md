@@ -2,7 +2,7 @@
 title: 博客搬家，新的起点
 id: 36
 categories:
-  - 其他
+  - others
 date: 2015-03-05 21:34:05
 tags:
 ---

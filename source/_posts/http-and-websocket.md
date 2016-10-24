@@ -1,12 +1,11 @@
 ---
 title: HTTP与WebSocket
 tags:
-  - HTTP
   - node.js
   - WebSocket
 id: 47
 categories:
-  - Javascript
+  - frontend
 date: 2015-03-18 22:25:55
 ---
 
@@ -61,7 +60,7 @@ WebSocket的优点：服务器能主动发送数据给客户端，实现实时�
 
 下面看一个 websocket.org 给出的测试数据：
 
-[![HTTP轮询与WebSocket对比](http://www.imyzf.com/wp-content/uploads/2015/03/poll-ws-compare.gif)](http://www.imyzf.com/wp-content/uploads/2015/03/poll-ws-compare.gif)
+[![HTTP轮询与WebSocket对比](http://cdn.imyzf.com/img/blog/2015/http-and-websocket/poll-ws-compare.gif)](http://cdn.imyzf.com/img/blog/2015/http-and-websocket/poll-ws-compare.gif)
 
 &nbsp;
 

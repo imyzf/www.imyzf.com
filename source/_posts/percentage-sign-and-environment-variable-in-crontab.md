@@ -4,7 +4,7 @@ tags:
   - linux
 id: 99
 categories:
-  - 服务器
+  - server
 date: 2015-04-03 21:07:59
 ---
 
@@ -12,9 +12,9 @@ date: 2015-04-03 21:07:59
 
 我的crontab是这样写的：
 
-[bash]
-0 3 * * * mysqldump -u user -pxxxx database &gt; &quot;/alidata/backup/imyzf.com/$(date +%F\ %T).sql&quot;
-[/bash]
+```bash
+0 3 * * * mysqldump -u user -pxxxx database > "/alidata/backup/imyzf.com/$(date +%F\ %T).sql"
+```
 
 首先，是百分号（%）。
 
@@ -23,22 +23,22 @@ date: 2015-04-03 21:07:59
 
 然后，是环境变量。
 
-即使解决了上面的问题，还是不能正常执行任务，因为crontab的环境变量是另外定义的。通过`cat /etc/crontab`你会发现默认的PATH是/sbin:/bin:/usr/sbin:/usr/bin，而我们的mysqldump是在/alidata/server/mysql/bin里的。
+即使解决了上面的问题，还是不能正常执行任务，因为crontab的环境变量是另外定义的。通过`cat /etc/crontab`你会发现默认的PATH是`/sbin:/bin:/usr/sbin:/usr/bin`，而我们的mysqldump是在/alidata/server/mysql/bin里的。
 
-![contab系统设置](http://www.imyzf.com/wp-content/uploads/2015/04/2015-04-03-204726-的屏幕截图.png)
+[![contab系统设置](http://cdn.imyzf.com/img/blog/2015/percentage-sign-and-environment-variable-in-crontab/1.png)](http://cdn.imyzf.com/img/blog/2015/percentage-sign-and-environment-variable-in-crontab/1.png)
 
 所以要修改默认设置，或者简单点，在sh文件里另外加上一行修改PATH，最后成了这样：
 
-[bash]
+```bash
 #!/bin/bash
-PATH=&quot;$PATH:/alidata/server/mysql/bin&quot;
-mysqldump -u user -pxxxx database &gt; &quot;/alidata/backup/www.imyzf.com/$(date +%F\ %T).sql&quot;
-[/bash]
+PATH="$PATH:/alidata/server/mysql/bin"
+mysqldump -u user -pxxxx database > "/alidata/backup/www.imyzf.com/$(date +%F\ %T).sql"
+```
 
 然后，我的crontab写成了这样（使用/dev/null是为了丢弃mysqldump使用标准输出的提示）：
 
-[bash]
-0 3 * * * /alidata/backup/www.imyzf.com/backup.sh &gt; /dev/null 2&gt;&amp;1
-[/bash]
+```bash
+0 3 * * * /alidata/backup/www.imyzf.com/backup.sh > /dev/null 2>&1
+```
 
 好了，终于搞定了！
