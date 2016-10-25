@@ -137,6 +137,8 @@ hr.small {
 pre,
 .table-responsive {
   -webkit-overflow-scrolling: touch;
+  margin-bottom: 0;
+  border: none;
 }
 pre code {
   display: block;
