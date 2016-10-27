@@ -133,3 +133,7 @@ nofollow:
     enable: true
     exclude:
       - cdn.imyzf.com
+
+stylus:
+  compress: true
+
