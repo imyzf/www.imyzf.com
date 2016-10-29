@@ -47,4 +47,15 @@
 
     <!-- ga & ba script hoook -->
     <script></script>
+
+    <style>
+        .intro-header {
+            background-image: url('<%= config.root %><%= page["header-img"] || config["header-img"] %>@750w.jpg')
+        }
+        @media only screen and (min-width: 768px) {
+          .intro-header {
+            background-image: url('<%= config.root %><%= page["header-img"] || config["header-img"] %>')
+          }
+        }
+    </style>
 </head>
