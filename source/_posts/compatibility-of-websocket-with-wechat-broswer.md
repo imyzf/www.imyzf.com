@@ -15,8 +15,6 @@ WebSocket是一个非常好的东西，用于开发实时应用非常好。它�
 
 [![微信websocket测试](http://cdn.imyzf.com/img/blog/2015/compatibility-of-websocket-with-wechat-broswer/1.jpg)](http://cdn.imyzf.com/img/blog/2015/compatibility-of-websocket-with-wechat-broswer/1.jpg)
 
-&nbsp;
-
 总结了一下大家的反馈如下：
 
 *   Android版微信没问题，因为使用的是QQ浏览器内核，不受本身系统浏览器影响。
@@ -27,5 +25,3 @@ WebSocket是一个非常好的东西，用于开发实时应用非常好。它�
 最后附上一张caniuse.com公布的WebSocket浏览器端兼容性对比（点击查看大图）。虽然Android4.3及以下系统浏览器都不支持WebSocket，但好在微信内置QQ浏览器内核，解决了这一问题。
 
 [![Websocket浏览器兼容性对比](http://cdn.imyzf.com/img/blog/2015/compatibility-of-websocket-with-wechat-broswer/2.png)](http://cdn.imyzf.com/img/blog/2015/compatibility-of-websocket-with-wechat-broswer/2.png)
-
-&nbsp;

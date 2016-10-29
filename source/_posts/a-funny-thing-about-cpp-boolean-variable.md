@@ -16,7 +16,7 @@ date: 2014-06-21 16:03:00
 int main()
 {
     int i = -1;
-    cout &lt;&lt; !i &lt;&lt; endl;
+    cout << !i << endl;
 }
 ```
 

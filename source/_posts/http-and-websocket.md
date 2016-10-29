@@ -56,13 +56,10 @@ HTTP的缺点：每次都重新请求，而且要带上HTTP头（就像邮件里
 
 WebSocket的优点：服务器能主动发送数据给客户端，实现实时通信；建立连接以后，不会断开，不需要每次都发送HTTP头，减少数据传输量。
 
-&nbsp;
-
 下面看一个 websocket.org 给出的测试数据：
 
 [![HTTP轮询与WebSocket对比](http://cdn.imyzf.com/img/blog/2015/http-and-websocket/poll-ws-compare.gif)](http://cdn.imyzf.com/img/blog/2015/http-and-websocket/poll-ws-compare.gif)
 
-&nbsp;
 
 蓝色表示用HTTP进行1秒/次的轮询，红色表示用WebSocket进行连接。
 

@@ -41,7 +41,7 @@ find方法中的第一个参数为控件名称，第二个参数为是否搜索�
 
 窗体设计如上图，控件名称分别为txttotal, btnadd, btnjudge, panelquestion
 
-在出题按钮事件中，进行进行动态添加textbox和label，每行3个textbox，显示两个加数和一个空白框填写结果，name都为txt+行号；还有三个label，从左到右为&ldquo;+&rdquo;、&ldquo;=&rdquo;和空白的用来显示对错。
+在出题按钮事件中，进行进行动态添加textbox和label，每行3个textbox，显示两个加数和一个空白框填写结果，name都为txt+行号；还有三个label，从左到右为“+”、“=”和空白的用来显示对错。
 
 在批改按钮事件中，访问已经动态建立的控件，获取textbox里的值，然后进行批改，把对错写入每行最后一个label中。
 
@@ -72,9 +72,9 @@ namespace addprogram
 
         private void btnadd_click(object sender, eventargs e)
         {
-            if (txttotal.text == &quot;&quot;)
+            if (txttotal.text == "")
             {
-                messagebox.show(&quot;请输入题目数！&quot;, &quot;错误&quot;);
+                messagebox.show("请输入题目数！", "错误");
                 return;
             } //判断题目数是否未填
             panelquestion.autoscroll = true;  //为panel添加滚动条
@@ -83,15 +83,15 @@ namespace addprogram
             textbox txtbox = new textbox();
             label label = new label();
             random rand = new random();  //随机数
-            for (int i = 0; i &amp;lt; total; i++)
+            for (int i = 0; i < total; i++)
             {
-                for(int j = 0; j &amp;lt; 3; j++)
+                for(int j = 0; j < 3; j++)
                 {
                     txtbox = new textbox();
                     txtbox.size = new size(50, 50);   //textbox大小
                     txtbox.location = new point(10 + 70 * j, 30 * i);  //textbox坐标
-                    txtbox.name = &quot;txt&quot; + convert.tostring(i);  //设定控件名称
-                    if (j &amp;lt; 2)
+                    txtbox.name = "txt" + convert.tostring(i);  //设定控件名称
+                    if (j < 2)
                     {
                         txtbox.text = convert.tostring(rand.next(100));
                         txtbox.readonly = true;
@@ -102,9 +102,9 @@ namespace addprogram
                     label.location = new point(64 + 70 * j, 30 * i);
                     switch (j)
                     {
-                        case 0: label.text = &quot;+&quot;; break;
-                        case 1: label.text = &quot;=&quot;; break;
-                        case 2: label.name = &quot;labelresult&quot; + convert.tostring(i); break;
+                        case 0: label.text = "+"; break;
+                        case 1: label.text = "="; break;
+                        case 2: label.name = "labelresult" + convert.tostring(i); break;
                     }
                     panelquestion.controls.add(label);
                 }
@@ -113,28 +113,28 @@ namespace addprogram
 
         private void btnjudge_click(object sender, eventargs e)
         {
-            if (txttotal.text == &quot;&quot;)
+            if (txttotal.text == "")
             {
-                messagebox.show(&quot;请输入题目数！&quot;, &quot;错误&quot;);
+                messagebox.show("请输入题目数！", "错误");
                 return;
             }
             int total = convert.toint32(txttotal.text);
-            for (int i = 0; i &amp;lt; total; i++)
+            for (int i = 0; i < total; i++)
             {
                 textbox[] txtbox = new textbox[3];  //用控件数组来定义每一行的textbox,总共3个textbox
-                for (int j = 0; j &amp;lt; 3; j++)   //获取原来已经动态添加的textbox,这样才能访问
-                    txtbox[j] = (textbox)panelquestion.controls.find(&quot;txt&quot; + convert.tostring(i), true)[j];
-                label label = (label)panelquestion.controls.find(&quot;labelresult&quot; + convert.tostring(i), true)[0];
-                if (txtbox[2].text == &quot;&quot;)  //如果未填答案,直接批改为错误
+                for (int j = 0; j < 3; j++)   //获取原来已经动态添加的textbox,这样才能访问
+                    txtbox[j] = (textbox)panelquestion.controls.find("txt" + convert.tostring(i), true)[j];
+                label label = (label)panelquestion.controls.find("labelresult" + convert.tostring(i), true)[0];
+                if (txtbox[2].text == "")  //如果未填答案,直接批改为错误
                 {
-                    label.text = &quot;&amp;times;&quot;;
+                    label.text = "×";
                     continue;
                 }
                 int add = convert.toint32(txtbox[0].text) + convert.toint32(txtbox[1].text);
                 if (add == convert.toint32(txtbox[2].text))
-                    label.text = &quot;&amp;radic;&quot;;
+                    label.text = "√";
                 else
-                    label.text = &quot;&amp;times;&quot;;
+                    label.text = "×";
             }
         }
 

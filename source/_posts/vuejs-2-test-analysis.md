@@ -92,8 +92,7 @@ module.exports = {
     browser
     .url('http://localhost:8080/examples/commits/')
       .waitForElementVisible('li', 3000)
-      // 将1000改成3000或者更高，等待数据拉取成功后插入
-&amp;amp;amp;lt;li&amp;amp;amp;gt;标签
+      // 将1000改成3000或者更高，等待数据拉取成功后插入<li>标签
       ...
       .end()
  }
