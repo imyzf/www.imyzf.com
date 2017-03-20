@@ -23,13 +23,13 @@ SEOTitle: I'm YZF - Coding forever
 header-img: /cdn.imyzf.com/img/asset/home-bg.jpg
 email:
 description: "这里是imyzf的个人技术博客，主要包含javascript等web技术相关内容，记录下在学习和开发过程中遇到的问题和解决方案，偶尔也写一些其他东西，抒发一下感情。欢迎大家访问和交流！"
-keyword: "Javascript,编程,技术,博客,程序员,imyzf"
+keywords: "JavaScript, 前端, 编程, 技术, 博客, 程序员, imyzf"
 
 
 # SNS settings
 # RSS: false
 weibo_username: imyzf
-zhihu_username:
+zhihu_username: imyzf
 github_username: imyzf
 twitter_username:
 facebook_username:
@@ -97,7 +97,7 @@ future: true
 highlight:
   enable: true
   line_number: false
-  auto_detect: true
+  auto_detect: false
   tab_replace:
 
 # Category & Tag
