@@ -58,7 +58,7 @@ WebSocket的优点：服务器能主动发送数据给客户端，实现实时�
 
 下面看一个 websocket.org 给出的测试数据：
 
-[![HTTP轮询与WebSocket对比](http://cdn.imyzf.com/img/blog/2015/http-and-websocket/poll-ws-compare.gif)](http://cdn.imyzf.com/img/blog/2015/http-and-websocket/poll-ws-compare.gif)
+[![HTTP轮询与WebSocket对比](https://cdn.imyzf.com/img/blog/2015/http-and-websocket/poll-ws-compare.gif)](https://cdn.imyzf.com/img/blog/2015/http-and-websocket/poll-ws-compare.gif)
 
 
 蓝色表示用HTTP进行1秒/次的轮询，红色表示用WebSocket进行连接。

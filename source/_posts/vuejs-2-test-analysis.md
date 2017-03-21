@@ -16,7 +16,7 @@ description: 在vue.js 2.0的源码中，可以看到有很多测试用例，并
 
 在研究vue的测试代码前，需要了解以下工具：
 
-* `Nightwatch`: 基于node.js的e2e测试解决方案，通过发送HTTP请求到Selenium WebDriver来控制浏览器进行测试，其原理可以通过下图来表示。[![nightwatch](http://cdn.imyzf.com/img/blog/2016/vuejs-2-test-analysis/nightwatch.png)](http://cdn.imyzf.com/img/blog/2016/vuejs-2-test-analysis/nightwatch.png)
+* `Nightwatch`: 基于node.js的e2e测试解决方案，通过发送HTTP请求到Selenium WebDriver来控制浏览器进行测试，其原理可以通过下图来表示。[![nightwatch](https://cdn.imyzf.com/img/blog/2016/vuejs-2-test-analysis/nightwatch.png)](https://cdn.imyzf.com/img/blog/2016/vuejs-2-test-analysis/nightwatch.png)
 * `Selenium`: WebDriver: Nightwatch调用的后端程序，在vue测试的过程中不需要手动去控制，只要控制Nightwatch就行了。Selenium是基于java的，你会发现Nightwatch调用了一个jav文件，所以需要安装java来提供运行环境，支持的最低版本是java 7。
 * `karma`: 前端测试运行工具，可以用他来自动调用不同的浏览器，并启动后端服务输出页面到浏览器。但是他只是一个test runner，要完成测试，还需要test framework，例如接下来介绍的jasmine。
 * `jasmine`: 测试框架，支持在浏览器和node.js环境中运行，自带断言库，适合用来编写单元测试。所以在测试中，对每个测试用例的执行和判断，是由jasmine完成的。
@@ -64,8 +64,8 @@ npm run test:e2e
 
 该命令会首先编译整个工程到dist/vue.js，然后通过node执行test/e2e/runner.js进行测试。在runner.js中，会配置好参数，然后调用./node_modules/.bin/nightwatch去执行build/nightwatch.config.js，所以不需要全局安装nightwatch。nightwatch.config.js中配置的selenium端口是4444，如果测试前4444端口被占用，会出现问题。
 
-[![vue-e2e-test](http://cdn.imyzf.com/img/blog/2016/vuejs-2-test-analysis/vue-e2e-test.jpg)
-](http://cdn.imyzf.com/img/blog/2016/vuejs-2-test-analysis/vue-e2e-test.jpg)运行测试后，可以看到图中的浏览器在自动操作界面。
+[![vue-e2e-test](https://cdn.imyzf.com/img/blog/2016/vuejs-2-test-analysis/vue-e2e-test.jpg)
+](https://cdn.imyzf.com/img/blog/2016/vuejs-2-test-analysis/vue-e2e-test.jpg)运行测试后，可以看到图中的浏览器在自动操作界面。
 
 受国内的网络限制，在进行e2e测试时会遇到两个问题：
 
@@ -117,8 +117,8 @@ npm run test:cover
 npm run test:sauce
 ```
 
-[![vue-coverage-report](http://cdn.imyzf.com/img/blog/2016/vuejs-2-test-analysis/vue-coverage-report.jpg)
-](http://cdn.imyzf.com/img/blog/2016/vuejs-2-test-analysis/vue-coverage-report.jpg)图为代码覆盖率报告，vue.js 2.0 rc3覆盖率已经达到99.93%。
+[![vue-coverage-report](https://cdn.imyzf.com/img/blog/2016/vuejs-2-test-analysis/vue-coverage-report.jpg)
+](https://cdn.imyzf.com/img/blog/2016/vuejs-2-test-analysis/vue-coverage-report.jpg)图为代码覆盖率报告，vue.js 2.0 rc3覆盖率已经达到99.93%。
 
 ### 服务端渲染测试
 

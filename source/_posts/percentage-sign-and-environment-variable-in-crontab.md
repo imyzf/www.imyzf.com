@@ -25,7 +25,7 @@ date: 2015-04-03 21:07:59
 
 即使解决了上面的问题，还是不能正常执行任务，因为crontab的环境变量是另外定义的。通过`cat /etc/crontab`你会发现默认的PATH是`/sbin:/bin:/usr/sbin:/usr/bin`，而我们的mysqldump是在/alidata/server/mysql/bin里的。
 
-[![contab系统设置](http://cdn.imyzf.com/img/blog/2015/percentage-sign-and-environment-variable-in-crontab/1.png)](http://cdn.imyzf.com/img/blog/2015/percentage-sign-and-environment-variable-in-crontab/1.png)
+[![contab系统设置](https://cdn.imyzf.com/img/blog/2015/percentage-sign-and-environment-variable-in-crontab/1.png)](https://cdn.imyzf.com/img/blog/2015/percentage-sign-and-environment-variable-in-crontab/1.png)
 
 所以要修改默认设置，或者简单点，在sh文件里另外加上一行修改PATH，最后成了这样：
 

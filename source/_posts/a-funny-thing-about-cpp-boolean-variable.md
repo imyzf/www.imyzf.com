@@ -28,7 +28,7 @@ int main()
 
 但是为什么会出现0而不是false呢？在cout中，有std::boolalpha和std::noboolalpha这两个选项，分别表示以字母（true, false输出和以数字（1, 0）输出。
 
-[![](http://cdn.imyzf.com/img/blog/2014/a-funny-thing-about-cpp-boolean-variable/1.jpg)](http://cdn.imyzf.com/img/blog/2014/a-funny-thing-about-cpp-boolean-variable/1.jpg)
+[![](https://cdn.imyzf.com/img/blog/2014/a-funny-thing-about-cpp-boolean-variable/1.jpg)](https://cdn.imyzf.com/img/blog/2014/a-funny-thing-about-cpp-boolean-variable/1.jpg)
 
 用codeblocks测试后发现，**默认的是std::noboolalpha**，这一点是不是又有很多人不知道呢？
 

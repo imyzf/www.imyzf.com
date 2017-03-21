@@ -21,7 +21,7 @@ date: 2014-10-22 05:39:00
 
 进入相应的页面，按f12，出现审查元素，直接在底部粘贴以下代码，按下回车即可。（若底部没有输入的地方，请按esc键）
 
-[![](http://cdn.imyzf.com/img/blog/2015/using-javascript-to-empty-your-renren/1.jpg)](http://cdn.imyzf.com/img/blog/2015/using-javascript-to-empty-your-renren/1.jpg)
+[![](https://cdn.imyzf.com/img/blog/2015/using-javascript-to-empty-your-renren/1.jpg)](https://cdn.imyzf.com/img/blog/2015/using-javascript-to-empty-your-renren/1.jpg)
 
 这些代码不是一件删除全部的，只是删除当前页面的，**请多次输入运行**，直到全部删除。
 

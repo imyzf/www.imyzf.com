@@ -23,7 +23,7 @@ date: 2015-04-01 17:15:42
 对于个人用户来说，这一点非常重要，我想说，用了一年我才领悟到这一点。很多人都以为固定带宽才爽，实际上小网站一个月能用多少流量呢？按流量计费，0.8元/GB，我们工作室的网站，举办一次全校性的大型投票活动，每天PV1-2万，CDN一天也就1GB流量。（买了固定带宽的个人站长，看到这里是不是想吐血了？）
 下图是我们这几天投票期间的CDN流量记录：
 
-[![阿里云CDN流量](http://cdn.imyzf.com/img/blog/2015/some-tips-of-using-aliyun/2.png)](http://cdn.imyzf.com/img/blog/2015/some-tips-of-using-aliyun/2.png)
+[![阿里云CDN流量](https://cdn.imyzf.com/img/blog/2015/some-tips-of-using-aliyun/2.png)](https://cdn.imyzf.com/img/blog/2015/some-tips-of-using-aliyun/2.png)
 
 
 
@@ -41,7 +41,7 @@ date: 2015-04-01 17:15:42
 
 这个是我去年参加AWDS时了解到的，当时我就震惊了。很多人吐槽说阿里云磁盘性能太低，用多块云磁盘组成RAID或者LVM可以很好的提高性能。但是有一个缺点，这样做不支持快照，后来我也问过客服，至今没有解决。
 
-[![阿里云RAID性能提升](http://cdn.imyzf.com/img/blog/2015/some-tips-of-using-aliyun/1.jpg)](http://cdn.imyzf.com/img/blog/2015/some-tips-of-using-aliyun/1.jpg)
+[![阿里云RAID性能提升](https://cdn.imyzf.com/img/blog/2015/some-tips-of-using-aliyun/1.jpg)](https://cdn.imyzf.com/img/blog/2015/some-tips-of-using-aliyun/1.jpg)
 
 * 不要把鸡蛋都放在一个ECS里
 

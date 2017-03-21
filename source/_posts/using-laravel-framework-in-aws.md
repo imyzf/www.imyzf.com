@@ -85,4 +85,4 @@ sudo service httpd restart
 ### 6、完成安装
 **在浏览器中访问你的地址/public/index.php，如果出现下图结果，那就恭喜你，安装成功了！
 
-![](http://cdn.imyzf.com/img/blog/2015/using-laravel-framework-in-aws/1.jpg)
+![](https://cdn.imyzf.com/img/blog/2015/using-laravel-framework-in-aws/1.jpg)

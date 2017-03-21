@@ -37,7 +37,7 @@ find方法中的第一个参数为控件名称，第二个参数为是否搜索�
 
 ### 具体实现
 
-[![](http://cdn.imyzf.com/img/blog/2013/a-csharp-winform-dynamic-component-example/1.jpg)](http://cdn.imyzf.com/img/blog/2013/a-csharp-winform-dynamic-component-example/1.jpg)
+[![](https://cdn.imyzf.com/img/blog/2013/a-csharp-winform-dynamic-component-example/1.jpg)](https://cdn.imyzf.com/img/blog/2013/a-csharp-winform-dynamic-component-example/1.jpg)
 
 窗体设计如上图，控件名称分别为txttotal, btnadd, btnjudge, panelquestion
 
@@ -47,7 +47,7 @@ find方法中的第一个参数为控件名称，第二个参数为是否搜索�
 
 运行结果如下：
 
-[![](http://cdn.imyzf.com/img/blog/2013/a-csharp-winform-dynamic-component-example/1.jpg)](http://cdn.imyzf.com/img/blog/2013/a-csharp-winform-dynamic-component-example/1.jpg)
+[![](https://cdn.imyzf.com/img/blog/2013/a-csharp-winform-dynamic-component-example/1.jpg)](https://cdn.imyzf.com/img/blog/2013/a-csharp-winform-dynamic-component-example/1.jpg)
 
 其他的不废话了，贴代码！
 
