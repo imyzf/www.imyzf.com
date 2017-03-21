@@ -1,5 +1,5 @@
 ---
-title: 在NW.js中调用Node.js的三种方式
+title: 在NW.js中调用Node.js的方式及孤儿进程的解决
 tags:
   - node.js
   - nw.js
