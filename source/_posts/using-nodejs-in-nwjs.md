@@ -7,6 +7,7 @@ categories:
   - frontend
 keywords: nw.js, nwjs, nw, node.js, node, javascript
 description: 在NW.js中有多种方式调用Node.js，除了官方文档中说明的直接在前端代码调用、通过node-main调用，本文还介绍了如何植入Node.js可执行文件，进行更高级的调用以解决一些疑难杂症。
+date: 2017-03-21
 ---
 
 NW.js是一种非常不错的跨平台桌面客户端开发方案，通过他可以直接调用Node.js API，结合了浏览器端和Node.js端开发的优势。根据官方文档的说明，提供了两种方式调用Node.js。针对一般场景，这两种方式已经足够，但是对于复杂的应用，可能会出现问题，所以这里我还会介绍第三种特别的调用方式。

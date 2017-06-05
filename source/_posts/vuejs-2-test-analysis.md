@@ -17,7 +17,7 @@ description: 在vue.js 2.0的源码中，可以看到有很多测试用例，并
 在研究vue的测试代码前，需要了解以下工具：
 
 * `Nightwatch`: 基于node.js的e2e测试解决方案，通过发送HTTP请求到Selenium WebDriver来控制浏览器进行测试，其原理可以通过下图来表示。[![nightwatch](https://cdn.imyzf.com/img/blog/2016/vuejs-2-test-analysis/nightwatch.png)](https://cdn.imyzf.com/img/blog/2016/vuejs-2-test-analysis/nightwatch.png)
-* `Selenium`: WebDriver: Nightwatch调用的后端程序，在vue测试的过程中不需要手动去控制，只要控制Nightwatch就行了。Selenium是基于java的，你会发现Nightwatch调用了一个jav文件，所以需要安装java来提供运行环境，支持的最低版本是java 7。
+* `Selenium`: Nightwatch调用的后端程序，在vue测试的过程中不需要手动去控制，只要控制Nightwatch就行了。Selenium是基于java的，你会发现Nightwatch调用了一个jar文件，所以需要安装java来提供运行环境，支持的最低版本是java 7。
 * `karma`: 前端测试运行工具，可以用他来自动调用不同的浏览器，并启动后端服务输出页面到浏览器。但是他只是一个test runner，要完成测试，还需要test framework，例如接下来介绍的jasmine。
 * `jasmine`: 测试框架，支持在浏览器和node.js环境中运行，自带断言库，适合用来编写单元测试。所以在测试中，对每个测试用例的执行和判断，是由jasmine完成的。
 
